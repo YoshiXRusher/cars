@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<div class="container full">
+    <h2>bienvenue</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusamus corporis quidem at, reiciendis labore cumque, quia magnam harum error libero qui delectus quae, recusandae molestiae voluptates doloremque ullam asperiores tempore! Expedita temporibus explicabo quaerat alias libero maiores, voluptas consectetur!</p>
+    <div class="row">
+    {% for i in 0..2 %}
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://via.placeholder.com/100" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+{% endblock %}
